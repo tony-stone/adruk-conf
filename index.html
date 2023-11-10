@@ -10,9 +10,9 @@
 <link href="presentation-template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
-  <meta name="author" content="Tony Stone, UCL / Unversity of Sheffield">
+  <meta name="author" content="Tony Stone, UCL / University of Sheffield">
   <meta name="dcterms.date" content="2023-11-16">
-  <title>Presentation title</title>
+  <title>Which people are most affected by changes to data linkage methodology?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,8 +30,28 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="presentation-template_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="presentation-template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="presentation-template_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="presentation-template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -326,41 +346,31 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Presentation title</h1>
-  <p class="subtitle">Presentation subtitle</p>
+  <h1 class="title">Which people are most affected by changes to data linkage methodology?</h1>
+  <p class="subtitle">An exploration of patient, organisational and spatiotemporal characteristics in administrative hospital data in England</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Tony Stone, UCL / Unversity of Sheffield 
+Tony Stone, UCL / University of Sheffield 
 </div>
 </div>
 </div>
 
   <p class="date">16 Nov 2023</p>
 </section>
-<section id="slide-title-1" class="slide level2 smaller">
-<h2>Slide Title 1</h2>
-<p>A <a href="https://www.github.com/UCL-ECHILD">link</a></p>
-<center>
-Centre something
-</center>
-<ol type="1">
-<li>numbered list item 1
-<ol type="1">
-<li>numbered sublist item 1</li>
-</ol></li>
-</ol>
+<section id="context" class="slide level2 smaller">
+<h2>Context</h2>
 <ul>
-<li>list item 1
+<li>NHS England (née Digital) operate various data services/collections for/from organisations receiving funds from the NHS England</li>
+<li>In 2021 NHS Digital changed how they assign records to an <em>individual</em> within their hospital episode statistics (HES) datasets</li>
+<li>HES is a very widely used administrative health data collection in England, by
 <ul>
-<li>sublist item 1</li>
+<li>Providers</li>
+<li>Commissioners</li>
+<li>Researchers (inc. within the UK’s national statistics institute)</li>
 </ul></li>
 </ul>
-<blockquote>
-<p>A quote</p>
-<p>–<em>(with attribution)<sup>1</sup></em></p>
-</blockquote>
 <aside class="notes">
 <p>Slide notes</p>
 <style type="text/css">
@@ -374,22 +384,42 @@ Centre something
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>And a footnote.</p></li></ol></aside></section>
-<section id="hes-datasets" class="slide level2 smaller">
-<h2>HES datasets</h2>
-<p>Care funded by the English NHS or taking place in a NHS funded hospital in England.</p>
-<h3 id="admitted-patient-care">Admitted patient care</h3>
-<p>Admitted to hospital Since 1989 but NHS Number only mandated since 1997</p>
-<h3 id="outpatient-appointments">Outpatient appointments</h3>
-<p>Since 2003</p>
-<h3 id="accident-and-emergency">Accident and Emergency</h3>
-<p>Non-admitted unscheduled care</p>
+</section>
+<section id="what-are-the-hes-datasets" class="slide level2 smaller">
+<h2>What are the HES datasets</h2>
 <ul>
-<li>ED + UCC</li>
+<li>event based records at the patient-activity level</li>
+<li>for specific types of care provision</li>
+<li>funded by the English NHS -OR- taking place in a NHS hospital in England.</li>
+</ul>
+<div class="columns">
+<div class="column col-no-border" style="width:33%;">
+<h3 id="admitted-patient-care-apc">Admitted patient care (APC)</h3>
+<ul>
+<li>Admitted to hospital (inc. day case admissions)</li>
+<li>Since 1989 but NHS Number only mandated since 1997</li>
+<li>Additional HES Critical Care (CC) dataset available</li>
+</ul>
+</div><div class="column col-left-border" style="width:33%;">
+<h3 id="outpatient-op-appointments">Outpatient (OP) appointments</h3>
+<ul>
+<li>Attended and unattended</li>
+<li>Since 2003</li>
+</ul>
+</div><div class="column col-left-border" style="width:33%;">
+<h3 id="accident-and-emergency-ae">Accident and Emergency (A&amp;E)</h3>
+<ul>
+<li>Non-admitted unscheduled(-ish) care at
+<ul>
+<li>ED</li>
+<li>UCC</li>
 <li>MIU</li>
 <li>WIC</li>
+</ul></li>
+<li>From 2007 to 2020</li>
 </ul>
-<p>Since 2007</p>
+</div>
+</div>
 </section>
 <section id="data-submitted-used-to-identify-patients-within-hes" class="slide level2 smaller">
 <h2>Data submitted used to identify patients within HES</h2>
@@ -401,10 +431,13 @@ Centre something
 <li>Local patient identifier</li>
 <li>Local patient identifier provider (NHS Trust)</li>
 </ul>
-<p>No names (due to “data minimisation”)</p>
-<p>No greater location precision than postcode (currently)</p>
+<h3 id="whats-not-available">What’s not available</h3>
 <ul>
-<li>mean 15 properties, but up to 100, per postcode.</li>
+<li>Names</li>
+<li>Address precision better than postcode
+<ul>
+<li>15 properties, but up to 100, per postcode.</li>
+</ul></li>
 </ul>
 </section>
 <section id="hes-id-algorithm" class="slide level2" data-background-color="#d1ffbd">
@@ -414,7 +447,6 @@ Centre something
 <ul>
 <li>deterministic</li>
 <li>stepwise</li>
-<li>within NHS reporting year</li>
 <li><strong>clusters</strong> HES records into disjoint sets</li>
 </ul>
 </div><div class="column" style="width:30%;">
@@ -473,7 +505,7 @@ a5
 <h3 id="mps-master-patient-service">MPS: Master Patient Service</h3>
 <div class="columns">
 <div class="column" style="width:70%;">
-<p>Used across NHS Digital’s (directed) data collections (now within NHS England).</p>
+<p>Used across NHS Digital/England’s “directed” data collections.</p>
 <ul>
 <li>deterministic</li>
 <li>stepwise</li>
@@ -557,10 +589,11 @@ a5-&gt;b3
 </section>
 <section id="data-source" class="slide level2">
 <h2>Data source</h2>
-<p>Assigned ID pairs (both HES ID and Person ID) for every record held:</p>
+<p>Patients aged 55 or less at date of activity in:</p>
 <ul>
-<li>APC, OP and AE datasets</li>
-<li>1997 onward</li>
+<li>APC 1997 - 2021</li>
+<li>OP 2003 - 2021</li>
+<li>AE 2007 - 2020</li>
 </ul>
 <p>Amounting to:</p>
 <ul>
@@ -709,17 +742,27 @@ h1–p1
 </div>
 </div>
 </section>
-<section id="slide-5-size-text-to-fit" class="slide level2">
-<h2>Slide 5: Size text to fit</h2>
-<div class="r-fit-text">
-<p>text to fit</p>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-APC" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Herbert A, Wijlaars L, Zylbersztejn A, Cromwell D, Hardelid P. <a href="https://doi.org/10.1093/ije/dyx015">Data resource profile: Hospital episode statistics admitted patient care (HES APC)</a>. International Journal of Epidemiology. 2017 Aug;46:1093–1093i. </div>
+</div>
+<div id="ref-HES" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Boyd A, Cornish R, Johnson L, Simmonds S, Syddall H, Westbury L, et al. Understanding hospital episode statistics (HES) resource report [Internet]. 2018. Available from: <a href="https://closer.ac.uk/research-fund-2/data-linkage/linkage-health-data-hospital-episode-statistics/">https://closer.ac.uk/research-fund-2/data-linkage/linkage-health-data-hospital-episode-statistics/</a></div>
+</div>
+<div id="ref-PersonIDHandbook" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">NHS Digital. The person_ID handbook for HES users - version 1.0.4 [Internet]. 2022. Available from: <a href="https://digital.nhs.uk/services/personal-demographics-service/master-person-service">https://digital.nhs.uk/services/personal-demographics-service/master-person-service</a></div>
+</div>
+<div id="ref-MPSImplementation" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">NHS Digital. Announcement of methodological change: Impact of changes to hospital episode statistics (HES) processing from april 2021 - version 3.0 [Internet]. 2022. Available from: <a href="https://digital.nhs.uk/data-and-information/find-data-and-publications/statement-of-administrative-sources/methodological-changes">https://digital.nhs.uk/data-and-information/find-data-and-publications/statement-of-administrative-sources/methodological-changes</a></div>
+</div>
 </div>
 
 <img src="imgs/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section>
-
     </div>
   </div>
 
