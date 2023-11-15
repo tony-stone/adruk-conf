@@ -411,10 +411,10 @@ Tony Stone, UCL / University of Sheffield
 <ul>
 <li>Non-admitted unscheduled(-ish) care at
 <ul>
-<li>ED</li>
-<li>UCC</li>
-<li>MIU</li>
-<li>WIC</li>
+<li>Emergency Departments</li>
+<li>Urgent Care Centres</li>
+<li>Minor Injury Units</li>
+<li>Walk-in Centres</li>
 </ul></li>
 <li>From 2007 to 2020</li>
 </ul>
@@ -589,12 +589,12 @@ a5-&gt;b3
 </section>
 <section id="data-source" class="slide level2">
 <h2>Data source</h2>
-<p>Patients aged 55 or less at date of activity in:</p>
 <ul>
-<li>APC, OP, A&amp;E</li>
-<li>April 2007 - March 2020</li>
+<li>HES datasets</li>
+<li>April 2007 - March 2020 (13 years)</li>
+<li>Patients aged 55 or less at date of activity (i.e.&nbsp;must have date of birth)</li>
 </ul>
-<p>Amounting to:</p>
+<p>Amounts to:</p>
 <ul>
 <li>979 million records</li>
 <li>59 million distinct HES IDs</li>
@@ -785,15 +785,28 @@ h1–p1
 </div>
 </div>
 </section>
-<section id="slide-3-columns" class="slide level2">
-<h2>Slide 3: columns</h2>
-<div class="columns">
-<div class="column" style="width:75%;">
-<p><strong>Emphasised text in left column</strong></p>
-</div><div class="column" style="width:25%;">
-<p><em>Italicised text in right column</em></p>
-</div>
-</div>
+<section id="features-investgated" class="slide level2">
+<h2>Features investgated</h2>
+<p>First reported: + Age (grouped: Infants, Children, Young Adults, Adults) + Gender + Ethnicity + Index of deprivation quintile + Year of activity</p>
+<p>And: + Total activity records (grouped into quintiles)</p>
+</section>
+<section id="results" class="slide level2">
+<h2>Results</h2>
+
+<img data-src="presentation-template_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<section id="disscussion" class="slide level2">
+<h2>Disscussion</h2>
+<ul>
+<li>Changes act at the fringes (91% records unchanged)</li>
+<li>Most group wise differences are small</li>
+<li>Greatest differences likely due to:
+<ul>
+<li>location information (as key component in linkage)</li>
+<li>improved data recording / verification by Trusts</li>
+</ul></li>
+<li>Deprivation still a factor</li>
+<li>Reason for activity not investigated in this work</li>
+</ul>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
@@ -1027,6 +1040,44 @@ h1–p1
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
