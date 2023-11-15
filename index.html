@@ -591,24 +591,75 @@ a5-&gt;b3
 <h2>Data source</h2>
 <p>Patients aged 55 or less at date of activity in:</p>
 <ul>
-<li>APC 1997 - 2021</li>
-<li>OP 2003 - 2021</li>
-<li>AE 2007 - 2020</li>
+<li>APC, OP, A&amp;E</li>
+<li>April 2007 - March 2020</li>
 </ul>
 <p>Amounting to:</p>
 <ul>
-<li>billion records</li>
-<li>million distinct HES IDs</li>
-<li>million distinct Person IDs</li>
+<li>979 million records</li>
+<li>59 million distinct HES IDs</li>
+<li>55 million distinct Person IDs</li>
+<li>60 million distinct (HES ID, Person ID)-pairs</li>
 </ul>
 </section>
 <section id="uninformative-simple-merges-splits-and-the-complex" class="slide level2">
 <h2>Uninformative, Simple, Merges, Splits and the Complex</h2>
-<div class="cell" data-fig-width="6">
+<div class="columns">
+<div class="column" style="width:60%;">
+<table>
+<thead>
+<tr class="header">
+<th>categorisation</th>
+<th style="text-align: right;">records</th>
+<th style="text-align: right;">distinct pairs</th>
+<th style="text-align: right;">HES IDs</th>
+<th style="text-align: right;">Person IDs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Uninformative”</td>
+<td style="text-align: right;">9.3M</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr class="even">
+<td>Simple</td>
+<td style="text-align: right;">881.3M</td>
+<td style="text-align: right;">42.1M</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr class="odd">
+<td>Merge (HES ID)</td>
+<td style="text-align: right;">69.0M</td>
+<td style="text-align: right;">6.5M</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">2.5M</td>
+</tr>
+<tr class="even">
+<td>Split (HES ID)</td>
+<td style="text-align: right;">13.2M</td>
+<td style="text-align: right;">1.1M</td>
+<td style="text-align: right;">0.4M</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr class="odd">
+<td>Complex</td>
+<td style="text-align: right;">6.6M</td>
+<td style="text-align: right;">0.6M</td>
+<td style="text-align: right;">0.4M</td>
+<td style="text-align: right;">0.4M</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:40%;">
+<div class="cell" data-fig-width="4">
 <div class="cell-output-display">
 <div>
 <div>
-<svg width="576" height="480" viewbox="0.00 0.00 303.62 603.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<svg width="384" height="480" viewbox="0.00 0.00 303.62 603.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 599)"> <g id="clust12" class="cluster">
 <title>
 cluster_uninformative
@@ -727,6 +778,8 @@ h1–p1
 </title>
 <path fill="none" stroke="black" d="M119.68,-536C131.2,-536 143.56,-536 155.46,-536"></path> </g> </g>
 </svg>
+</div>
+</div>
 </div>
 </div>
 </div>
