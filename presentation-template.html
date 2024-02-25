@@ -8,7 +8,7 @@
 <link href="presentation-template_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="presentation-template_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="presentation-template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.4.550">
 
   <meta name="author" content="Tony Stone, UCL / University of Sheffield">
   <meta name="dcterms.date" content="2023-11-16">
@@ -177,7 +177,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -450,50 +451,62 @@ Tony Stone, UCL / University of Sheffield
 <li><strong>clusters</strong> HES records into disjoint sets</li>
 </ul>
 </div><div class="column" style="width:30%;">
-<div class="cell" data-fig-width="3">
+<div class="cell" data-fig-width="3" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class=""><p></p>
 <div>
 <svg width="288" height="480" viewbox="0.00 0.00 94.60 260.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)"> <g id="clust1" class="cluster">
-<title>
-cluster_all
-</title>
-<path fill="transparent" stroke="black" d="M12,-8C12,-8 74.6,-8 74.6,-8 80.6,-8 86.6,-14 86.6,-20 86.6,-20 86.6,-232 86.6,-232 86.6,-238 80.6,-244 74.6,-244 74.6,-244 12,-244 12,-244 6,-244 0,-238 0,-232 0,-232 0,-20 0,-20 0,-14 6,-8 12,-8"></path> <text text-anchor="middle" x="43.3" y="-227.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES records</text> </g> <g id="clust2" class="cluster">
-<title>
-cluster_pid1
-</title>
-<path fill="#1b9e77" stroke="black" d="M20,-144C20,-144 66.6,-144 66.6,-144 72.6,-144 78.6,-150 78.6,-156 78.6,-156 78.6,-199 78.6,-199 78.6,-205 72.6,-211 66.6,-211 66.6,-211 20,-211 20,-211 14,-211 8,-205 8,-199 8,-199 8,-156 8,-156 8,-150 14,-144 20,-144"></path> <text text-anchor="middle" x="43.3" y="-194.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES ID 1</text> </g> <g id="clust3" class="cluster">
-<title>
-cluster_pid2
-</title>
-<path fill="#d95f02" stroke="black" d="M20,-91C20,-91 66.6,-91 66.6,-91 72.6,-91 78.6,-97 78.6,-103 78.6,-103 78.6,-124 78.6,-124 78.6,-130 72.6,-136 66.6,-136 66.6,-136 20,-136 20,-136 14,-136 8,-130 8,-124 8,-124 8,-103 8,-103 8,-97 14,-91 20,-91"></path> <text text-anchor="middle" x="43.3" y="-119.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES ID 2</text> </g> <g id="clust4" class="cluster">
-<title>
-cluster_pid3
-</title>
-<path fill="#7570b3" stroke="black" d="M20,-16C20,-16 66.6,-16 66.6,-16 72.6,-16 78.6,-22 78.6,-28 78.6,-28 78.6,-71 78.6,-71 78.6,-77 72.6,-83 66.6,-83 66.6,-83 20,-83 20,-83 14,-83 8,-77 8,-71 8,-71 8,-28 8,-28 8,-22 14,-16 20,-16"></path> <text text-anchor="middle" x="43.3" y="-66.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES ID 3</text> </g> <!-- a1 --> <g id="node1" class="node">
-<title>
-a1
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-176" rx="1.8" ry="1.8"></ellipse> </g> <!-- a2 --> <g id="node2" class="node">
-<title>
-a2
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-154" rx="1.8" ry="1.8"></ellipse> </g> <!-- a3 --> <g id="node3" class="node">
-<title>
-a3
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-101" rx="1.8" ry="1.8"></ellipse> </g> <!-- a4 --> <g id="node4" class="node">
-<title>
-a4
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-48" rx="1.8" ry="1.8"></ellipse> </g> <!-- a5 --> <g id="node5" class="node">
-<title>
-a5
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-26" rx="1.8" ry="1.8"></ellipse> </g> </g>
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<g id="clust1" class="cluster">
+<title>cluster_all</title>
+<path fill="transparent" stroke="black" d="M12,-8C12,-8 74.6,-8 74.6,-8 80.6,-8 86.6,-14 86.6,-20 86.6,-20 86.6,-232 86.6,-232 86.6,-238 80.6,-244 74.6,-244 74.6,-244 12,-244 12,-244 6,-244 0,-238 0,-232 0,-232 0,-20 0,-20 0,-14 6,-8 12,-8"></path>
+<text text-anchor="middle" x="43.3" y="-227.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES records</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_pid1</title>
+<path fill="#1b9e77" stroke="black" d="M20,-144C20,-144 66.6,-144 66.6,-144 72.6,-144 78.6,-150 78.6,-156 78.6,-156 78.6,-199 78.6,-199 78.6,-205 72.6,-211 66.6,-211 66.6,-211 20,-211 20,-211 14,-211 8,-205 8,-199 8,-199 8,-156 8,-156 8,-150 14,-144 20,-144"></path>
+<text text-anchor="middle" x="43.3" y="-194.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES ID 1</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_pid2</title>
+<path fill="#d95f02" stroke="black" d="M20,-91C20,-91 66.6,-91 66.6,-91 72.6,-91 78.6,-97 78.6,-103 78.6,-103 78.6,-124 78.6,-124 78.6,-130 72.6,-136 66.6,-136 66.6,-136 20,-136 20,-136 14,-136 8,-130 8,-124 8,-124 8,-103 8,-103 8,-97 14,-91 20,-91"></path>
+<text text-anchor="middle" x="43.3" y="-119.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES ID 2</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_pid3</title>
+<path fill="#7570b3" stroke="black" d="M20,-16C20,-16 66.6,-16 66.6,-16 72.6,-16 78.6,-22 78.6,-28 78.6,-28 78.6,-71 78.6,-71 78.6,-77 72.6,-83 66.6,-83 66.6,-83 20,-83 20,-83 14,-83 8,-77 8,-71 8,-71 8,-28 8,-28 8,-22 14,-16 20,-16"></path>
+<text text-anchor="middle" x="43.3" y="-66.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES ID 3</text>
+</g>
+<!-- a1 -->
+<g id="node1" class="node">
+<title>a1</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-176" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- a2 -->
+<g id="node2" class="node">
+<title>a2</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-154" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- a3 -->
+<g id="node3" class="node">
+<title>a3</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-101" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- a4 -->
+<g id="node4" class="node">
+<title>a4</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-48" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- a5 -->
+<g id="node5" class="node">
+<title>a5</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-26" rx="1.8" ry="1.8"></ellipse>
+</g>
+</g>
 </svg>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -513,74 +526,102 @@ a5
 <li><strong>Links</strong> each HES record to - at most - one identity</li>
 </ul>
 </div><div class="column" style="width:30%;">
-<div class="cell" data-fig-width="3">
+<div class="cell" data-fig-width="3" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class=""><p></p>
 <div>
 <svg width="288" height="480" viewbox="0.00 0.00 192.20 179.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 175)"> <g id="clust1" class="cluster">
-<title>
-cluster_records
-</title>
-<path fill="transparent" stroke="black" d="M12,-8C12,-8 74.6,-8 74.6,-8 80.6,-8 86.6,-14 86.6,-20 86.6,-20 86.6,-151 86.6,-151 86.6,-157 80.6,-163 74.6,-163 74.6,-163 12,-163 12,-163 6,-163 0,-157 0,-151 0,-151 0,-20 0,-20 0,-14 6,-8 12,-8"></path> <text text-anchor="middle" x="43.57" y="-146.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES records</text> </g> <g id="clust2" class="cluster">
-<title>
-cluster_persons
-</title>
-<path fill="transparent" stroke="black" d="M118.6,-30C118.6,-30 172.2,-30 172.2,-30 178.2,-30 184.2,-36 184.2,-42 184.2,-42 184.2,-129 184.2,-129 184.2,-135 178.2,-141 172.2,-141 172.2,-141 118.6,-141 118.6,-141 112.6,-141 106.6,-135 106.6,-129 106.6,-129 106.6,-42 106.6,-42 106.6,-36 112.6,-30 118.6,-30"></path> <text text-anchor="middle" x="145.4" y="-124.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Person IDs</text> </g> <!-- a1 --> <g id="node1" class="node">
-<title>
-a1
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-128" rx="1.8" ry="1.8"></ellipse> </g> <!-- b1 --> <g id="node7" class="node">
-<title>
-b1
-</title>
-<ellipse fill="black" stroke="black" cx="145.4" cy="-106" rx="1.8" ry="1.8"></ellipse> <text text-anchor="middle" x="138.54" y="-91.6" font-family="Times,serif" font-size="14.00">A</text> </g> <!-- a1&#45;&gt;b1 --> <g id="edge1" class="edge">
-<title>
-a1-&gt;b1
-</title>
-<path fill="none" stroke="black" d="M44.93,-127.75C53.55,-125.87 109.24,-113.69 133.33,-108.42"></path> <polygon fill="black" stroke="black" points="134.38,-111.77 143.4,-106.22 132.89,-104.94 134.38,-111.77"></polygon> </g> <!-- a2 --> <g id="node2" class="node">
-<title>
-a2
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-106" rx="1.8" ry="1.8"></ellipse> </g> <!-- a2&#45;&gt;b1 --> <g id="edge2" class="edge">
-<title>
-a2-&gt;b1
-</title>
-<path fill="none" stroke="black" d="M44.93,-106C53.55,-106 109.24,-106 133.33,-106"></path> <polygon fill="black" stroke="black" points="133.4,-109.5 143.4,-106 133.4,-102.5 133.4,-109.5"></polygon> </g> <!-- a3 --> <g id="node3" class="node">
-<title>
-a3
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-84" rx="1.8" ry="1.8"></ellipse> </g> <!-- b2 --> <g id="node8" class="node">
-<title>
-b2
-</title>
-<ellipse fill="black" stroke="black" cx="145.4" cy="-84" rx="1.8" ry="1.8"></ellipse> <text text-anchor="middle" x="138.93" y="-69.6" font-family="Times,serif" font-size="14.00">B</text> </g> <!-- a3&#45;&gt;b2 --> <g id="edge3" class="edge">
-<title>
-a3-&gt;b2
-</title>
-<path fill="none" stroke="black" d="M44.93,-84C53.55,-84 109.24,-84 133.33,-84"></path> <polygon fill="black" stroke="black" points="133.4,-87.5 143.4,-84 133.4,-80.5 133.4,-87.5"></polygon> </g> <!-- a4 --> <g id="node4" class="node">
-<title>
-a4
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-62" rx="1.8" ry="1.8"></ellipse> </g> <!-- b3 --> <g id="node9" class="node">
-<title>
-b3
-</title>
-<ellipse fill="black" stroke="black" cx="145.4" cy="-62" rx="1.8" ry="1.8"></ellipse> <text text-anchor="middle" x="138.93" y="-47.6" font-family="Times,serif" font-size="14.00">C</text> </g> <!-- a4&#45;&gt;b3 --> <g id="edge4" class="edge">
-<title>
-a4-&gt;b3
-</title>
-<path fill="none" stroke="black" d="M44.93,-62C53.55,-62 109.24,-62 133.33,-62"></path> <polygon fill="black" stroke="black" points="133.4,-65.5 143.4,-62 133.4,-58.5 133.4,-65.5"></polygon> </g> <!-- a5 --> <g id="node5" class="node">
-<title>
-a5
-</title>
-<ellipse fill="black" stroke="black" cx="42.8" cy="-40" rx="1.8" ry="1.8"></ellipse> </g> <!-- a5&#45;&gt;b3 --> <g id="edge5" class="edge">
-<title>
-a5-&gt;b3
-</title>
-<path fill="none" stroke="black" d="M44.93,-40.25C53.55,-42.13 109.24,-54.31 133.33,-59.58"></path> <polygon fill="black" stroke="black" points="132.89,-63.06 143.4,-61.78 134.38,-56.23 132.89,-63.06"></polygon> </g> <!-- a6 --> <!-- b4 --> </g>
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 175)">
+<g id="clust1" class="cluster">
+<title>cluster_records</title>
+<path fill="transparent" stroke="black" d="M12,-8C12,-8 74.6,-8 74.6,-8 80.6,-8 86.6,-14 86.6,-20 86.6,-20 86.6,-151 86.6,-151 86.6,-157 80.6,-163 74.6,-163 74.6,-163 12,-163 12,-163 6,-163 0,-157 0,-151 0,-151 0,-20 0,-20 0,-14 6,-8 12,-8"></path>
+<text text-anchor="middle" x="43.57" y="-146.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">HES records</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_persons</title>
+<path fill="transparent" stroke="black" d="M118.6,-30C118.6,-30 172.2,-30 172.2,-30 178.2,-30 184.2,-36 184.2,-42 184.2,-42 184.2,-129 184.2,-129 184.2,-135 178.2,-141 172.2,-141 172.2,-141 118.6,-141 118.6,-141 112.6,-141 106.6,-135 106.6,-129 106.6,-129 106.6,-42 106.6,-42 106.6,-36 112.6,-30 118.6,-30"></path>
+<text text-anchor="middle" x="145.4" y="-124.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Person IDs</text>
+</g>
+<!-- a1 -->
+<g id="node1" class="node">
+<title>a1</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-128" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- b1 -->
+<g id="node7" class="node">
+<title>b1</title>
+<ellipse fill="black" stroke="black" cx="145.4" cy="-106" rx="1.8" ry="1.8"></ellipse>
+<text text-anchor="middle" x="138.54" y="-91.6" font-family="Times,serif" font-size="14.00">A</text>
+</g>
+<!-- a1&#45;&gt;b1 -->
+<g id="edge1" class="edge">
+<title>a1-&gt;b1</title>
+<path fill="none" stroke="black" d="M44.93,-127.75C53.55,-125.87 109.24,-113.69 133.33,-108.42"></path>
+<polygon fill="black" stroke="black" points="134.38,-111.77 143.4,-106.22 132.89,-104.94 134.38,-111.77"></polygon>
+</g>
+<!-- a2 -->
+<g id="node2" class="node">
+<title>a2</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-106" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- a2&#45;&gt;b1 -->
+<g id="edge2" class="edge">
+<title>a2-&gt;b1</title>
+<path fill="none" stroke="black" d="M44.93,-106C53.55,-106 109.24,-106 133.33,-106"></path>
+<polygon fill="black" stroke="black" points="133.4,-109.5 143.4,-106 133.4,-102.5 133.4,-109.5"></polygon>
+</g>
+<!-- a3 -->
+<g id="node3" class="node">
+<title>a3</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-84" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- b2 -->
+<g id="node8" class="node">
+<title>b2</title>
+<ellipse fill="black" stroke="black" cx="145.4" cy="-84" rx="1.8" ry="1.8"></ellipse>
+<text text-anchor="middle" x="138.93" y="-69.6" font-family="Times,serif" font-size="14.00">B</text>
+</g>
+<!-- a3&#45;&gt;b2 -->
+<g id="edge3" class="edge">
+<title>a3-&gt;b2</title>
+<path fill="none" stroke="black" d="M44.93,-84C53.55,-84 109.24,-84 133.33,-84"></path>
+<polygon fill="black" stroke="black" points="133.4,-87.5 143.4,-84 133.4,-80.5 133.4,-87.5"></polygon>
+</g>
+<!-- a4 -->
+<g id="node4" class="node">
+<title>a4</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-62" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- b3 -->
+<g id="node9" class="node">
+<title>b3</title>
+<ellipse fill="black" stroke="black" cx="145.4" cy="-62" rx="1.8" ry="1.8"></ellipse>
+<text text-anchor="middle" x="138.93" y="-47.6" font-family="Times,serif" font-size="14.00">C</text>
+</g>
+<!-- a4&#45;&gt;b3 -->
+<g id="edge4" class="edge">
+<title>a4-&gt;b3</title>
+<path fill="none" stroke="black" d="M44.93,-62C53.55,-62 109.24,-62 133.33,-62"></path>
+<polygon fill="black" stroke="black" points="133.4,-65.5 143.4,-62 133.4,-58.5 133.4,-65.5"></polygon>
+</g>
+<!-- a5 -->
+<g id="node5" class="node">
+<title>a5</title>
+<ellipse fill="black" stroke="black" cx="42.8" cy="-40" rx="1.8" ry="1.8"></ellipse>
+</g>
+<!-- a5&#45;&gt;b3 -->
+<g id="edge5" class="edge">
+<title>a5-&gt;b3</title>
+<path fill="none" stroke="black" d="M44.93,-40.25C53.55,-42.13 109.24,-54.31 133.33,-59.58"></path>
+<polygon fill="black" stroke="black" points="132.89,-63.06 143.4,-61.78 134.38,-56.23 132.89,-63.06"></polygon>
+</g>
+<!-- a6 -->
+<!-- b4 -->
+</g>
 </svg>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -655,130 +696,176 @@ a5-&gt;b3
 </tbody>
 </table>
 </div><div class="column" style="width:40%;">
-<div class="cell" data-fig-width="4">
+<div class="cell" data-fig-width="4" data-layout-align="default">
 <div class="cell-output-display">
 <div>
+<p></p><figure class=""><p></p>
 <div>
 <svg width="384" height="480" viewbox="0.00 0.00 303.62 603.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 599)"> <g id="clust12" class="cluster">
-<title>
-cluster_uninformative
-</title>
-<polygon fill="transparent" stroke="black" points="8,-510 8,-587 287.62,-587 287.62,-510 8,-510"></polygon> <text text-anchor="middle" x="62.93" y="-570.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">“Uninformative”</text> </g> <g id="clust11" class="cluster">
-<title>
-cluster_simple
-</title>
-<polygon fill="transparent" stroke="black" points="8,-425 8,-502 287.62,-502 287.62,-425 8,-425"></polygon> <text text-anchor="middle" x="35.83" y="-485.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Simple</text> </g> <g id="clust1" class="cluster">
-<title>
-cluster_complex
-</title>
-<polygon fill="transparent" stroke="black" points="8,-8 8,-139 287.62,-139 287.62,-8 8,-8"></polygon> <text text-anchor="middle" x="41.67" y="-122.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Complex</text> </g> <g id="clust5" class="cluster">
-<title>
-cluster_split
-</title>
-<polygon fill="transparent" stroke="black" points="8,-147 8,-278 287.62,-278 287.62,-147 8,-147"></polygon> <text text-anchor="middle" x="29.23" y="-261.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Split</text> </g> <g id="clust8" class="cluster">
-<title>
-cluster_merge
-</title>
-<polygon fill="transparent" stroke="black" points="8,-286 8,-417 287.62,-417 287.62,-286 8,-286"></polygon> <text text-anchor="middle" x="34.27" y="-400.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Merge</text> </g> <!-- h6 --> <g id="node1" class="node">
-<title>
-h6
-</title>
-<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-88" rx="51.62" ry="18"></ellipse> <text text-anchor="middle" x="67.81" y="-83.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text> </g> <!-- p6 --> <g id="node3" class="node">
-<title>
-p6
-</title>
-<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-88" rx="62" ry="18"></ellipse> <text text-anchor="middle" x="217.62" y="-83.8" font-family="Times,serif" font-size="14.00">Person ID: A</text> </g> <!-- h6&#45;&#45;p6 --> <g id="edge1" class="edge">
-<title>
-h6–p6
-</title>
-<path fill="none" stroke="black" d="M119.68,-88C131.2,-88 143.56,-88 155.46,-88"></path> </g> <!-- p7 --> <g id="node4" class="node">
-<title>
-p7
-</title>
-<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-34" rx="61.43" ry="18"></ellipse> <text text-anchor="middle" x="217.62" y="-29.8" font-family="Times,serif" font-size="14.00">Person ID: B</text> </g> <!-- h6&#45;&#45;p7 --> <g id="edge2" class="edge">
-<title>
-h6–p7
-</title>
-<path fill="none" stroke="black" d="M104.21,-75.07C126.59,-66.89 155.5,-56.33 178.4,-47.96"></path> </g> <!-- h7 --> <g id="node2" class="node">
-<title>
-h7
-</title>
-<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-34" rx="51.62" ry="18"></ellipse> <text text-anchor="middle" x="67.81" y="-29.8" font-family="Times,serif" font-size="14.00">HES ID: 2</text> </g> <!-- h7&#45;&#45;p7 --> <g id="edge3" class="edge">
-<title>
-h7–p7
-</title>
-<path fill="none" stroke="black" d="M119.68,-34C131.37,-34 143.91,-34 155.97,-34"></path> </g> <!-- h5 --> <g id="node5" class="node">
-<title>
-h5
-</title>
-<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-200" rx="51.62" ry="18"></ellipse> <text text-anchor="middle" x="67.81" y="-195.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text> </g> <!-- p4 --> <g id="node6" class="node">
-<title>
-p4
-</title>
-<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-173" rx="62" ry="18"></ellipse> <text text-anchor="middle" x="217.62" y="-168.8" font-family="Times,serif" font-size="14.00">Person ID: A</text> </g> <!-- h5&#45;&#45;p4 --> <g id="edge4" class="edge">
-<title>
-h5–p4
-</title>
-<path fill="none" stroke="black" d="M113.96,-191.75C130.01,-188.82 148.19,-185.5 164.76,-182.47"></path> </g> <!-- p5 --> <g id="node7" class="node">
-<title>
-p5
-</title>
-<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-227" rx="61.43" ry="18"></ellipse> <text text-anchor="middle" x="217.62" y="-222.8" font-family="Times,serif" font-size="14.00">Person ID: B</text> </g> <!-- h5&#45;&#45;p5 --> <g id="edge5" class="edge">
-<title>
-h5–p5
-</title>
-<path fill="none" stroke="black" d="M113.96,-208.25C130.09,-211.19 148.39,-214.54 165.02,-217.57"></path> </g> <!-- h3 --> <g id="node8" class="node">
-<title>
-h3
-</title>
-<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-366" rx="51.62" ry="18"></ellipse> <text text-anchor="middle" x="67.81" y="-361.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text> </g> <!-- p3 --> <g id="node10" class="node">
-<title>
-p3
-</title>
-<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-339" rx="62" ry="18"></ellipse> <text text-anchor="middle" x="217.62" y="-334.8" font-family="Times,serif" font-size="14.00">Person ID: A</text> </g> <!-- h3&#45;&#45;p3 --> <g id="edge6" class="edge">
-<title>
-h3–p3
-</title>
-<path fill="none" stroke="black" d="M113.96,-357.75C130.01,-354.82 148.19,-351.5 164.76,-348.47"></path> </g> <!-- h4 --> <g id="node9" class="node">
-<title>
-h4
-</title>
-<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-312" rx="51.62" ry="18"></ellipse> <text text-anchor="middle" x="67.81" y="-307.8" font-family="Times,serif" font-size="14.00">HES ID: 2</text> </g> <!-- h4&#45;&#45;p3 --> <g id="edge7" class="edge">
-<title>
-h4–p3
-</title>
-<path fill="none" stroke="black" d="M113.96,-320.25C130.01,-323.18 148.19,-326.5 164.76,-329.53"></path> </g> <!-- h2 --> <g id="node11" class="node">
-<title>
-h2
-</title>
-<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-451" rx="51.62" ry="18"></ellipse> <text text-anchor="middle" x="67.81" y="-446.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text> </g> <!-- p2 --> <g id="node12" class="node">
-<title>
-p2
-</title>
-<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-451" rx="62" ry="18"></ellipse> <text text-anchor="middle" x="217.62" y="-446.8" font-family="Times,serif" font-size="14.00">Person ID: A</text> </g> <!-- h2&#45;&#45;p2 --> <g id="edge8" class="edge">
-<title>
-h2–p2
-</title>
-<path fill="none" stroke="black" d="M116.39,-444.65C130.23,-444.21 145.49,-444.13 159.84,-444.41"></path> </g> <!-- h2&#45;&#45;p2 --> <g id="edge9" class="edge">
-<title>
-h2–p2
-</title>
-<path fill="none" stroke="black" d="M116.39,-457.35C130.23,-457.79 145.49,-457.87 159.84,-457.59"></path> </g> <!-- h1 --> <g id="node13" class="node">
-<title>
-h1
-</title>
-<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-536" rx="51.62" ry="18"></ellipse> <text text-anchor="middle" x="67.81" y="-531.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text> </g> <!-- p1 --> <g id="node14" class="node">
-<title>
-p1
-</title>
-<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-536" rx="62" ry="18"></ellipse> <text text-anchor="middle" x="217.62" y="-531.8" font-family="Times,serif" font-size="14.00">Person ID: A</text> </g> <!-- h1&#45;&#45;p1 --> <g id="edge10" class="edge">
-<title>
-h1–p1
-</title>
-<path fill="none" stroke="black" d="M119.68,-536C131.2,-536 143.56,-536 155.46,-536"></path> </g> </g>
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 599)">
+<g id="clust12" class="cluster">
+<title>cluster_uninformative</title>
+<polygon fill="transparent" stroke="black" points="8,-510 8,-587 287.62,-587 287.62,-510 8,-510"></polygon>
+<text text-anchor="middle" x="62.93" y="-570.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">"Uninformative"</text>
+</g>
+<g id="clust11" class="cluster">
+<title>cluster_simple</title>
+<polygon fill="transparent" stroke="black" points="8,-425 8,-502 287.62,-502 287.62,-425 8,-425"></polygon>
+<text text-anchor="middle" x="35.83" y="-485.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Simple</text>
+</g>
+<g id="clust1" class="cluster">
+<title>cluster_complex</title>
+<polygon fill="transparent" stroke="black" points="8,-8 8,-139 287.62,-139 287.62,-8 8,-8"></polygon>
+<text text-anchor="middle" x="41.67" y="-122.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Complex</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_split</title>
+<polygon fill="transparent" stroke="black" points="8,-147 8,-278 287.62,-278 287.62,-147 8,-147"></polygon>
+<text text-anchor="middle" x="29.23" y="-261.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Split</text>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_merge</title>
+<polygon fill="transparent" stroke="black" points="8,-286 8,-417 287.62,-417 287.62,-286 8,-286"></polygon>
+<text text-anchor="middle" x="34.27" y="-400.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">Merge</text>
+</g>
+<!-- h6 -->
+<g id="node1" class="node">
+<title>h6</title>
+<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-88" rx="51.62" ry="18"></ellipse>
+<text text-anchor="middle" x="67.81" y="-83.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text>
+</g>
+<!-- p6 -->
+<g id="node3" class="node">
+<title>p6</title>
+<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-88" rx="62" ry="18"></ellipse>
+<text text-anchor="middle" x="217.62" y="-83.8" font-family="Times,serif" font-size="14.00">Person ID: A</text>
+</g>
+<!-- h6&#45;&#45;p6 -->
+<g id="edge1" class="edge">
+<title>h6--p6</title>
+<path fill="none" stroke="black" d="M119.68,-88C131.2,-88 143.56,-88 155.46,-88"></path>
+</g>
+<!-- p7 -->
+<g id="node4" class="node">
+<title>p7</title>
+<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-34" rx="61.43" ry="18"></ellipse>
+<text text-anchor="middle" x="217.62" y="-29.8" font-family="Times,serif" font-size="14.00">Person ID: B</text>
+</g>
+<!-- h6&#45;&#45;p7 -->
+<g id="edge2" class="edge">
+<title>h6--p7</title>
+<path fill="none" stroke="black" d="M104.21,-75.07C126.59,-66.89 155.5,-56.33 178.4,-47.96"></path>
+</g>
+<!-- h7 -->
+<g id="node2" class="node">
+<title>h7</title>
+<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-34" rx="51.62" ry="18"></ellipse>
+<text text-anchor="middle" x="67.81" y="-29.8" font-family="Times,serif" font-size="14.00">HES ID: 2</text>
+</g>
+<!-- h7&#45;&#45;p7 -->
+<g id="edge3" class="edge">
+<title>h7--p7</title>
+<path fill="none" stroke="black" d="M119.68,-34C131.37,-34 143.91,-34 155.97,-34"></path>
+</g>
+<!-- h5 -->
+<g id="node5" class="node">
+<title>h5</title>
+<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-200" rx="51.62" ry="18"></ellipse>
+<text text-anchor="middle" x="67.81" y="-195.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text>
+</g>
+<!-- p4 -->
+<g id="node6" class="node">
+<title>p4</title>
+<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-173" rx="61.43" ry="18"></ellipse>
+<text text-anchor="middle" x="217.62" y="-168.8" font-family="Times,serif" font-size="14.00">Person ID: B</text>
+</g>
+<!-- h5&#45;&#45;p4 -->
+<g id="edge4" class="edge">
+<title>h5--p4</title>
+<path fill="none" stroke="black" d="M113.96,-191.75C130.09,-188.81 148.39,-185.46 165.02,-182.43"></path>
+</g>
+<!-- p5 -->
+<g id="node7" class="node">
+<title>p5</title>
+<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-227" rx="62" ry="18"></ellipse>
+<text text-anchor="middle" x="217.62" y="-222.8" font-family="Times,serif" font-size="14.00">Person ID: A</text>
+</g>
+<!-- h5&#45;&#45;p5 -->
+<g id="edge5" class="edge">
+<title>h5--p5</title>
+<path fill="none" stroke="black" d="M113.96,-208.25C130.01,-211.18 148.19,-214.5 164.76,-217.53"></path>
+</g>
+<!-- h3 -->
+<g id="node8" class="node">
+<title>h3</title>
+<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-366" rx="51.62" ry="18"></ellipse>
+<text text-anchor="middle" x="67.81" y="-361.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text>
+</g>
+<!-- p3 -->
+<g id="node10" class="node">
+<title>p3</title>
+<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-339" rx="62" ry="18"></ellipse>
+<text text-anchor="middle" x="217.62" y="-334.8" font-family="Times,serif" font-size="14.00">Person ID: A</text>
+</g>
+<!-- h3&#45;&#45;p3 -->
+<g id="edge6" class="edge">
+<title>h3--p3</title>
+<path fill="none" stroke="black" d="M113.96,-357.75C130.01,-354.82 148.19,-351.5 164.76,-348.47"></path>
+</g>
+<!-- h4 -->
+<g id="node9" class="node">
+<title>h4</title>
+<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-312" rx="51.62" ry="18"></ellipse>
+<text text-anchor="middle" x="67.81" y="-307.8" font-family="Times,serif" font-size="14.00">HES ID: 2</text>
+</g>
+<!-- h4&#45;&#45;p3 -->
+<g id="edge7" class="edge">
+<title>h4--p3</title>
+<path fill="none" stroke="black" d="M113.96,-320.25C130.01,-323.18 148.19,-326.5 164.76,-329.53"></path>
+</g>
+<!-- h2 -->
+<g id="node11" class="node">
+<title>h2</title>
+<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-451" rx="51.62" ry="18"></ellipse>
+<text text-anchor="middle" x="67.81" y="-446.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text>
+</g>
+<!-- p2 -->
+<g id="node12" class="node">
+<title>p2</title>
+<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-451" rx="62" ry="18"></ellipse>
+<text text-anchor="middle" x="217.62" y="-446.8" font-family="Times,serif" font-size="14.00">Person ID: A</text>
+</g>
+<!-- h2&#45;&#45;p2 -->
+<g id="edge8" class="edge">
+<title>h2--p2</title>
+<path fill="none" stroke="black" d="M116.39,-444.65C130.23,-444.21 145.49,-444.13 159.84,-444.41"></path>
+</g>
+<!-- h2&#45;&#45;p2 -->
+<g id="edge9" class="edge">
+<title>h2--p2</title>
+<path fill="none" stroke="black" d="M116.39,-457.35C130.23,-457.79 145.49,-457.87 159.84,-457.59"></path>
+</g>
+<!-- h1 -->
+<g id="node13" class="node">
+<title>h1</title>
+<ellipse fill="#d1ffbd" stroke="black" cx="67.81" cy="-536" rx="51.62" ry="18"></ellipse>
+<text text-anchor="middle" x="67.81" y="-531.8" font-family="Times,serif" font-size="14.00">HES ID: 1</text>
+</g>
+<!-- p1 -->
+<g id="node14" class="node">
+<title>p1</title>
+<ellipse fill="#c5eafa" stroke="black" cx="217.62" cy="-536" rx="62" ry="18"></ellipse>
+<text text-anchor="middle" x="217.62" y="-531.8" font-family="Times,serif" font-size="14.00">Person ID: A</text>
+</g>
+<!-- h1&#45;&#45;p1 -->
+<g id="edge10" class="edge">
+<title>h1--p1</title>
+<path fill="none" stroke="black" d="M119.68,-536C131.2,-536 143.56,-536 155.46,-536"></path>
+</g>
+</g>
 </svg>
 </div>
+<p></p></figure><p></p>
 </div>
 </div>
 </div>
@@ -841,9 +928,11 @@ h1–p1
 <div class="csl-left-margin">4. </div><div class="csl-right-inline">NHS Digital. Announcement of methodological change: Impact of changes to hospital episode statistics (HES) processing from april 2021 - version 3.0 [Internet]. 2022. Available from: <a href="https://digital.nhs.uk/data-and-information/find-data-and-publications/statement-of-administrative-sources/methodological-changes">https://digital.nhs.uk/data-and-information/find-data-and-publications/statement-of-administrative-sources/methodological-changes</a></div>
 </div>
 </div>
+<div class="quarto-auto-generated-content">
+<p><img src="imgs/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 
-<img src="imgs/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-
+</div>
 </div>
 </section>
     </div>
@@ -872,7 +961,6 @@ h1–p1
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1171,10 +1259,9 @@ h1–p1
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1184,8 +1271,17 @@ h1–p1
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
